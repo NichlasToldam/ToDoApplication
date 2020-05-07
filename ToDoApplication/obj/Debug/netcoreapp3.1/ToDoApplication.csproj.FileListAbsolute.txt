@@ -172,11 +172,12 @@ C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\bin\Debug\netcoreapp
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.csproj.CoreCompileInputs.cache
-C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\Create.cshtml.g.cs
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\Delete.cshtml.g.cs
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\Details.cshtml.g.cs
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\Edit.cshtml.g.cs
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\Index.cshtml.g.cs
+C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\Razor\Views\ToDoes\_ToDoTable.cshtml.g.cs
+C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.csproj.CoreCompileInputs.cache
+C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cache
