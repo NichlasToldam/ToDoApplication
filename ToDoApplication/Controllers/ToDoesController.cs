@@ -24,13 +24,13 @@ namespace ToDoApplication.Controllers
         // GET: ToDoes
         public async Task<IActionResult> Index()
         {
-            IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
-            //return View(await _context.toDos.ToListAsync()); // OLD
-            return View(
-                await _context.toDos.Where(x => x.User == currentUser).ToListAsync()
-                ); // Nichlas: Only display the ToDoes made by the current user
+            //IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
+            ////return View(await _context.toDos.ToListAsync()); // OLD
+            //return View(
+            //    await _context.toDos.Where(x => x.User == currentUser).ToListAsync()
+            //    ); // Nichlas: Only display the ToDoes made by the current user
 
-            //return View();
+            return View();
         }
 
         public ActionResult BuildToDoTable()
@@ -38,8 +38,8 @@ namespace ToDoApplication.Controllers
             IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
 
             return PartialView(
-                "_ToDoTable",
-                _context.toDos.Where(x => x.User == currentUser).ToListAsync()
+                "_ToDoTable", _context.toDos.Where(x => x.User == currentUser)
+                //_context.toDos.Where(x => x.User == currentUser).ToListAsync()
                 ); // Nichlas: Only display the ToDoes made by the current user
         }
 
