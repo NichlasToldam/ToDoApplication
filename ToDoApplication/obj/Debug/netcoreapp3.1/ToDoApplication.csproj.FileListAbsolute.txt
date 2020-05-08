@@ -181,3 +181,4 @@ C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.csproj.CoreCompileInputs.cache
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\obj\Debug\netcoreapp3.1\ToDoApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tolda\source\repos\ToDoApplication\ToDoApplication\bin\Debug\netcoreapp3.1\libman.json

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ToDoApplication.Data;
 using ToDoApplication.Models;
@@ -24,13 +20,13 @@ namespace ToDoApplication.Controllers
         // GET: ToDoes
         public async Task<IActionResult> Index()
         {
-            //IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
-            ////return View(await _context.toDos.ToListAsync()); // OLD
-            //return View(
-            //    await _context.toDos.Where(x => x.User == currentUser).ToListAsync()
-            //    ); // Nichlas: Only display the ToDoes made by the current user
-
             return View();
+        }
+        
+        private IQueryable<ToDo> GetMyToDoes()
+        {
+            IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
+            return _context.toDos.Where(x => x.User == currentUser);
         }
 
         public ActionResult BuildToDoTable()
@@ -38,9 +34,7 @@ namespace ToDoApplication.Controllers
             IdentityUser currentUser = _context.Users.Where(x => x.Email == User.Identity.Name).FirstOrDefault();// Nichlas: Get the currrent user
 
             return PartialView(
-                "_ToDoTable", _context.toDos.Where(x => x.User == currentUser)
-                //_context.toDos.Where(x => x.User == currentUser).ToListAsync()
-                ); // Nichlas: Only display the ToDoes made by the current user
+                "_ToDoTable", GetMyToDoes() /*_context.toDos.Where(x => x.User == currentUser)*/); // Nichlas: Only display the ToDoes made by the current user
         }
 
         // GET: ToDoes/Details/5

@@ -1,14 +1,14 @@
-﻿@model IEnumerable<ToDoApplication.Models.ToDo>
+﻿@model ToDoApplication.Models.ToDo
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Your Personal Bulletin Board</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@*<p>
+        <a asp-action="Create">Create New</a>
+    </p>*@
 
 
 @*Make a ajax call to update the partial view without refreshing the site*@
@@ -16,8 +16,20 @@
     @*@await Html.PartialAsync("_ToDoTable", Model)*@
 </div>
 
-@section Scripts {
-    <script src="~/lib/jquery.unobtrusive-ajax/jquery.unobtrusive-ajax.js"></script>
+<div id="addToDoForm">
+    @*@using (Ajax.BeginForm("AJAXCreate", "ToDoes", new AjaxOptions
+    {
+        Insertion = InsertionMode.Replace,
+        HttpMethod = "POST",
+        UpdateTargetId = "tableDiv"
+    }))*@
+</div>
+
+
+@section Scripts
+{
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
     <script src="/js/site.js"></script>
 }
 
